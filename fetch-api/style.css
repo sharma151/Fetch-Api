@@ -23,7 +23,8 @@ nav > h2 {
   color: white;
 }
 
-input {
+.searchBox,
+.search {
   height: 35px;
   width: 200px;
   padding-left: 10px;
@@ -71,7 +72,7 @@ table {
   width: 80%;
   margin: auto;
   margin-top: 10px;
-  
+
   border-radius: 10px;
 }
 
@@ -84,4 +85,11 @@ td {
 
 tr:hover {
   background-color: coral;
+}
+
+.filter {
+  height: fit-content;
+  width: 40%;
+  margin: auto;
+  border: 2px solid red;
 }
