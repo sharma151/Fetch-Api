@@ -49,3 +49,11 @@ button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 50px;
 }
+
+@media (max-width: 500px) {
+  form {
+    position: relative;
+    top: 40px;
+    right: 50px;
+  }
+}
