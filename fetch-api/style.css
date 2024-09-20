@@ -33,7 +33,7 @@ input {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-button {
+.searchBtn {
   height: 35px;
   width: 70px;
   border: none;
@@ -41,7 +41,7 @@ button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.searchBtn:hover {
   background-color: #fff0d1;
 }
 .recipeeContainer h2 {
@@ -50,10 +50,38 @@ button:hover {
   margin-top: 50px;
 }
 
-@media (max-width: 500px) {
-  form {
-    position: relative;
-    top: 40px;
-    right: 50px;
-  }
+.navigations {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  margin-top: 40px;
+}
+.search {
+  width: 40%;
+  padding: 0px 10px;
+}
+.filterbtn {
+  margin-left: 20px;
+  width: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: coral;
 }

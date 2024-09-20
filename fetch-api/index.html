@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,15 +22,63 @@
         </nav>
     </header>
     <main>
-        <section>
+        <!-- <section>
             <div class="recipeeContainer">
                 <h2>Search your favourite recipes</h2>
             </div>
+
+        </section> -->
+        <section>
+            <div class="navigations">
+                <input type="text" placeholder="search" class="search">
+                <button class="filterbtn"><i class="fa-solid  fa-xl fa-sliders"></i></button>
+            </div>
+            <div class="data">
+                <table>
+                    <tr>
+                        <th>IDmeal</th>
+                        <th>StrMeal</th>
+                        <th>StrCategory</th>
+                        <th>StrArea</th>
+                        <th>strMealThumb</th>
+                        <th>strYoutube</th>
+                    </tr>
+                    <tr>
+                        <td>53065</td>
+                        <td>Sushi</td>
+                        <td>Seafood</td>
+                        <td>Japanese</td>
+                        <td><img src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg" alt=""
+                                srcset="" height="40px" width="60px"></td>
+                        <td><a href="https://www.youtube.com/watch?v=ub68OxEypaY">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>52977</td>
+                        <td>Corba</td>
+                        <td>Side</td>
+                        <td>Turkish</td>
+                        <td><img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" alt=""
+                                srcset="" height="40px" width="60px"></td>
+                        <td><a href="https://www.youtube.com/watch?v=VVnZd8A84z4">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>53060</td>
+                        <td>Burek</td>
+                        <td>Side</td>
+                        <td>Croatian</td>
+                        <td><img src="https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg" alt=""
+                                srcset="" height="40px" width="60px"></td>
+                        <td><a href="https://www.youtube.com/watch?v=YsJXZwE5pdY">Link</a></td>
+                    </tr>
+                    
+                </table>
+            </div>
         </section>
+
     </main>
 
 
-    <script src="./script.js"></script>
+    <script src=" ./script.js"></script>
 </body>
 
 </html>
