@@ -1,6 +1,5 @@
 let allRecipes = [];
 
-// Debounce function: Ensures that search is performed after a delay
 function debounce(func, delay) {
   let debounceTimer;
   return function (...args) {
@@ -14,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
     .then((response) => response.json())
     .then((data) => {
-      allRecipes = data.meals; // Store the fetched recipes data
-      displayRecipes(allRecipes); // Initially display all recipes
+      allRecipes = data.meals;
+      displayRecipes(allRecipes);
     })
     .catch((error) => console.error("Error fetching data:", error));
 });
@@ -23,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to display recipes in the table
 function displayRecipes(recipes) {
   const tableBody = document.querySelector("#recipe-table tbody");
-  tableBody.innerHTML = ""; // Clear previous table rows
-
+  tableBody.innerHTML = "";
   recipes.forEach((recipe) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -49,11 +47,9 @@ function searchRecipes() {
       recipe.strArea.toLowerCase().includes(query)
     );
   });
-  displayRecipes(filteredRecipes); // Display filtered recipes
+  displayRecipes(filteredRecipes);
 }
 
 // Attach the debounce function to the search input
 const searchInput = document.getElementById("search-input");
-searchInput.addEventListener("input", debounce(searchRecipes, 300)); 
-
-
+searchInput.addEventListener("input", debounce(searchRecipes, 300));
