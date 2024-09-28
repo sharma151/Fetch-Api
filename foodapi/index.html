@@ -22,8 +22,8 @@
     <main>
         <section>
             <div class="navigations">
-                <input type="text" placeholder="search" id="search-input">
-                <button class="filterbtn"><i class="fa-solid  fa-xl fa-sliders"></i></button>
+                <input type="text" placeholder="search for recipes..." id="search-input">
+                <button class="filterbtn" id="filter-toggle"><i class="fa-solid  fa-xl fa-sliders"></i></button>
             </div>
             <div class="data">
                 <table id="recipe-table">
@@ -43,10 +43,27 @@
                 </table>
             </div>
         </section>
+        <div id="filter-container" style="display: none;">
+            <!-- <h3>Filters</h3> -->
+
+            <div id="category-filters">
+                <h4>Categories</h4>
+            </div>
+
+            <div id="area-filters">
+                <h4>Areas</h4>
+            </div>
+
+            <div id="ingredient-filters">
+                <h4>Ingredients</h4>
+            </div>
+
+            <button id="apply-filters">Apply Filters</button>
+        </div>
 
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./practice.js"></script>
 </body>
 
 </html>
