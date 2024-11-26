@@ -1,4 +1,4 @@
-const countryList = {
+export const CountryCurrencyMapping = {
   AED: "AE",
   AFN: "AF",
   XCD: "AG",
